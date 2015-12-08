@@ -47,7 +47,7 @@
 #elif ANDROID_VERSION_MAJOR == 6 && ANDROID_VERSION_MINOR == 0
 #include "droid-util-60.h"
 #else
-#error "No valid ANDROID_VERSION found."
+#include "droid-util-60.h"
 #endif
 
 #define PROP_DROID_DEVICES    "droid.devices"
