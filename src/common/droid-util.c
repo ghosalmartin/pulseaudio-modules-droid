@@ -1665,11 +1665,7 @@ pa_droid_stream *pa_droid_open_input_stream(pa_droid_hw_module *module,
         pa_channel_map_init_mono(&channel_map);
         sample_spec.channels = 1;
         /* Only allow recording both downlink and uplink. */
-#ifdef QCOM_HARDWARE
-        hal_channel_mask = AUDIO_CHANNEL_IN_VOICE_CALL_MONO;
-#else
         hal_channel_mask = AUDIO_CHANNEL_IN_VOICE_UPLINK | AUDIO_CHANNEL_IN_VOICE_DNLINK;
-#endif
     }
 
     config_in.sample_rate = sample_spec.rate;
