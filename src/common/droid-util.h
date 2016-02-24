@@ -45,9 +45,9 @@
 #elif ANDROID_VERSION_MAJOR == 5 && ANDROID_VERSION_MINOR == 1
 #include "droid-util-51.h"
 #elif ANDROID_VERSION_MAJOR == 6 && ANDROID_VERSION_MINOR == 0
-#include "droid-util-51.h"
+#include "droid-util-60.h"
 #else
-#include "droid-util-51.h"
+#include "droid-util-60.h"
 #endif
 
 #define PROP_DROID_DEVICES    "droid.devices"
